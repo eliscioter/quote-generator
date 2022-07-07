@@ -12,7 +12,7 @@
         echo $e;
     } else {
         $decoded = json_decode($resp, true);
-        print_r($decoded);
+        echo $decoded[0]['text'];
     }
 
     curl_close($ch);

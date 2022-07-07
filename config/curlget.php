@@ -24,6 +24,8 @@
         if ($check_author == 1) {
             $value_author = "Unknown";
         }
+
+        echo $value_author . " and " . $value_quote;
     }
 
     curl_close($ch);

@@ -9,8 +9,7 @@
     $resp = curl_exec($ch);
 
 
-    $value_quote;
-    $value_author;
+   
     if ($e = curl_error($ch)) {
         echo $e;
     } else {

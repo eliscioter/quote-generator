@@ -17,7 +17,7 @@
 
         $key = array_rand($quote);
         $value_quote =  $quote[$key]['text'];
-        $value_author = $quote[$key]['author_name'];
+        $value_author = $quote[$key]['author'];
         $check_author = strlen($value_author) < 1;
 
         if ($check_author == 1) {

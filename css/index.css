@@ -1,0 +1,55 @@
+body, html {
+    background-color: #00040D; 
+    color: #fff; 
+    font-family: Verdana;
+}
+
+nav li {
+    list-style: none;
+}
+.nav-logout {
+    text-align: right;
+    padding-right: 2%;
+    margin-bottom: 50px;
+}
+a {
+    text-decoration: none;
+}
+.nav-logout > a, a:active, a:visited, a:hover {
+    color: #fff;
+}
+
+.quote-section {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+.quote-container {
+    background-color: #B3B4B6;
+    width: 50%;
+    border-radius: 10px;
+    padding: 50px 10px 50px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.quote-container > p, span {
+    color: #262930;
+}
+.new-quote {
+    margin-top: 40px;
+}
+.new-quote form > input {
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .quote-container {
+        width: 75% !important;
+    }
+}

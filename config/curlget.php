@@ -16,7 +16,7 @@
         $quote = json_decode($resp, true);
 
         $key = array_rand($quote);
-        $value_quote =  $quote[$key]['quotes'];
+        $value_quote =  $quote[$key]['text'];
         $value_author = $quote[$key]['author_name'];
         $check_author = strlen($value_author) < 1;
 

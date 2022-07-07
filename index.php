@@ -1,2 +1,2 @@
 <?php
-    echo 'connection established';
+    echo 'hello world';

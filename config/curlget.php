@@ -8,11 +8,22 @@
 
     $resp = curl_exec($ch);
 
+
+    $value_quote;
+    $value_author;
     if ($e = curl_error($ch)) {
         echo $e;
     } else {
-        $decoded = json_decode($resp, true);
-        echo $decoded[0]['text'];
+        $quote = json_decode($resp, true);
+
+        $key = array_rand($quote);
+        $value_quote =  $quote[$key]['quotes'];
+        $value_author = $quote[$key]['author_name'];
+        $check_author = strlen($value_author) < 1;
+
+        if ($check_author == 1) {
+            $value_author = "Unknown";
+        }
     }
 
     curl_close($ch);

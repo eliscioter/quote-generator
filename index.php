@@ -8,6 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this is unique</h1>
+<section class="quote-section">
+            <?php if (empty($quote)): ?>
+                <p>No quote available.</p>
+            <?php endif; ?>
+        <div class="quote-container">
+            <?php if(isset($_POST['new-quote'])): ?>
+                <?php echo '<p>' . $value_quote . '</p>' ?>
+                <?php echo '<span>' . '- '. $value_author . '</span>' ?> 
+            <?php else: ?>
+                <?php echo '<p>' . $value_quote . '</p>' ?>
+                <?php echo '<span>' . '- '. $value_author . '</span>' ?> 
+            <?php endif; ?>
+
+            <div class="new-quote">
+                <form method="post">
+                    <input type="submit" name="new-quote" value="New quote">
+                </form>
+            </div>
+        </div>   
+    </section>
 </body>
 </html>
